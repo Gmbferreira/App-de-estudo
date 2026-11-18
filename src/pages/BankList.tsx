@@ -1,3 +1,4 @@
+import ThemeToggle from '../components/ThemeToggle';
 import { bankErrors, banks } from '../lib/banks';
 import type { Bank } from '../lib/schema';
 import { isSessionValid, progress, type Session } from '../lib/session';
@@ -66,7 +67,7 @@ function BankRow({ bank, onStart, onResume }: { bank: Bank } & Props) {
             <button
               type="button"
               onClick={() => onResume(bank, session)}
-              className="rounded-md bg-pen px-4 py-2 font-bold text-white hover:bg-pen-dark"
+              className="rounded-md bg-pen px-4 py-2 font-bold text-on-accent hover:bg-pen-strong"
             >
               Continuar
             </button>
@@ -82,7 +83,7 @@ function BankRow({ bank, onStart, onResume }: { bank: Bank } & Props) {
           <button
             type="button"
             onClick={() => onStart(bank)}
-            className="rounded-md bg-pen px-4 py-2 font-bold text-white hover:bg-pen-dark"
+            className="rounded-md bg-pen px-4 py-2 font-bold text-on-accent hover:bg-pen-strong"
           >
             Começar
           </button>
@@ -95,11 +96,14 @@ function BankRow({ bank, onStart, onResume }: { bank: Bank } & Props) {
 export default function BankList(props: Props) {
   return (
     <main className="mx-auto max-w-3xl px-5 pt-12 pb-20 sm:pt-16">
-      <header className="mb-8">
-        <h1 className="text-4xl font-bold tracking-tight">Bancos de questões</h1>
-        <p className="mt-2 text-graphite">
-          Questões e alternativas aparecem em ordem aleatória a cada rodada.
-        </p>
+      <header className="mb-8 flex items-start justify-between gap-4">
+        <div>
+          <h1 className="text-4xl font-bold tracking-tight">Bancos de questões</h1>
+          <p className="mt-2 text-graphite">
+            Questões e alternativas aparecem em ordem aleatória a cada rodada.
+          </p>
+        </div>
+        <ThemeToggle />
       </header>
 
       {bankErrors.length > 0 && (

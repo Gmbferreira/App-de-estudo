@@ -2,9 +2,9 @@ export type BubbleState = 'empty' | 'filled' | 'right' | 'wrong' | 'faded';
 
 const styles: Record<BubbleState, string> = {
   empty: 'border-ink/70 text-ink bg-sheet',
-  filled: 'border-pen bg-pen text-white',
-  right: 'border-acerto bg-acerto text-white',
-  wrong: 'border-erro bg-erro text-white',
+  filled: 'border-pen bg-pen text-on-accent',
+  right: 'border-acerto bg-acerto text-on-accent',
+  wrong: 'border-erro bg-erro text-on-accent',
   faded: 'border-graphite/40 text-graphite/70 bg-sheet',
 };
 

@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import AiNotice from '../components/AiNotice';
 import Bubble from '../components/Bubble';
 import Markdown from '../components/Markdown';
+import ThemeToggle from '../components/ThemeToggle';
 import type { Bank } from '../lib/schema';
 import { computeResult, letter, type Session, type WrongItem } from '../lib/session';
 
@@ -51,9 +52,12 @@ export default function Results({ bank, session, onRetryWrong, onRetryAll, onExi
   return (
     <main className="mx-auto max-w-3xl px-5 pt-12 pb-20 sm:pt-16">
       <header>
-        <p className="text-graphite">
-          {session.mode === 'review' ? `Revisão das erradas: ${bank.title}` : bank.title}
-        </p>
+        <div className="flex items-center justify-between gap-4">
+          <p className="text-graphite">
+            {session.mode === 'review' ? `Revisão das erradas: ${bank.title}` : bank.title}
+          </p>
+          <ThemeToggle />
+        </div>
         <h1 className="mt-3 text-7xl font-bold tracking-tight tabular-nums sm:text-8xl">
           {formatPercent(result.percent)}
         </h1>
@@ -68,7 +72,7 @@ export default function Results({ bank, session, onRetryWrong, onRetryAll, onExi
           <button
             type="button"
             onClick={() => onRetryWrong(wrongIds)}
-            className="rounded-md bg-pen px-5 py-2.5 font-bold text-white hover:bg-pen-dark"
+            className="rounded-md bg-pen px-5 py-2.5 font-bold text-on-accent hover:bg-pen-strong"
           >
             Refazer as erradas ({wrongIds.length})
           </button>

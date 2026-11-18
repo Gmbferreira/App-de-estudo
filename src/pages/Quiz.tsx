@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import AiNotice from '../components/AiNotice';
 import Bubble, { type BubbleState } from '../components/Bubble';
 import Markdown from '../components/Markdown';
+import ThemeToggle from '../components/ThemeToggle';
 import type { Bank } from '../lib/schema';
 import {
   confirm,
@@ -76,13 +77,16 @@ export default function Quiz({ bank, session, onChange, onExit }: Props) {
           <button
             type="button"
             onClick={onExit}
-            className="-ml-2 rounded-md px-2 py-1 text-sm font-bold text-pen hover:bg-pen-soft"
+            className="-ml-2 shrink-0 whitespace-nowrap rounded-md px-2 py-1 text-sm font-bold text-pen hover:bg-pen-soft"
           >
             Voltar aos bancos
           </button>
-          <p className="truncate text-sm text-graphite">
-            {session.mode === 'review' ? `Revisão das erradas: ${bank.title}` : bank.title}
-          </p>
+          <div className="flex min-w-0 items-center gap-2">
+            <p className="truncate text-sm text-graphite">
+              {session.mode === 'review' ? `Revisão das erradas: ${bank.title}` : bank.title}
+            </p>
+            <ThemeToggle />
+          </div>
         </div>
         <div
           className="h-1.5 bg-rule"
@@ -113,7 +117,7 @@ export default function Quiz({ bank, session, onChange, onExit }: Props) {
         </p>
 
         {reappearing && !feedback && (
-          <p className="mb-4 rounded-md bg-pen-soft px-3 py-2 text-sm text-pen-dark">
+          <p className="mb-4 rounded-md bg-pen-soft px-3 py-2 text-sm text-pen-strong">
             Você pulou esta questão antes. Se pular de novo, ela conta como erro.
           </p>
         )}
@@ -174,7 +178,7 @@ export default function Quiz({ bank, session, onChange, onExit }: Props) {
               ref={nextButton}
               type="button"
               onClick={() => onChange(next(session))}
-              className="rounded-md bg-pen px-6 py-2.5 font-bold text-white hover:bg-pen-dark"
+              className="rounded-md bg-pen px-6 py-2.5 font-bold text-on-accent hover:bg-pen-strong"
             >
               {isLast ? 'Ver resultado' : 'Próxima questão'}
             </button>
@@ -191,7 +195,7 @@ export default function Quiz({ bank, session, onChange, onExit }: Props) {
                 type="button"
                 disabled={!session.selected}
                 onClick={() => onChange(confirm(session))}
-                className="rounded-md bg-pen px-6 py-2.5 font-bold text-white hover:bg-pen-dark disabled:cursor-not-allowed disabled:bg-graphite/30 disabled:text-white"
+                className="rounded-md bg-pen px-6 py-2.5 font-bold text-on-accent hover:bg-pen-strong disabled:cursor-not-allowed disabled:bg-rule disabled:text-graphite"
               >
                 Confirmar
               </button>

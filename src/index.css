@@ -12,7 +12,7 @@
 
   /* Caneta azul: seleção e ações principais */
   --color-pen: #2b3fc4;
-  --color-pen-dark: #1f2f9a;
+  --color-pen-strong: #1f2f9a;
   --color-pen-soft: #e7eafb;
 
   /* Correção */
@@ -22,6 +22,34 @@
   --color-erro-soft: #fbe8e6;
   --color-ai: #835400;
   --color-ai-soft: #fbf1dc;
+
+  /* Texto sobre caneta, acerto e erro */
+  --color-on-accent: #ffffff;
+}
+
+/* Modo escuro: as mesmas cores, redefinidas. O atributo data-theme é
+   definido no index.html antes do app carregar, para não piscar. */
+html[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-paper: #121722;
+  --color-sheet: #1b2230;
+  --color-ink: #e4e8ef;
+  --color-graphite: #98a2b3;
+  --color-rule: #2f3849;
+
+  --color-pen: #8b98ff;
+  --color-pen-strong: #b3bcff;
+  --color-pen-soft: #262d4d;
+
+  --color-acerto: #4fc38c;
+  --color-acerto-soft: #15302a;
+  --color-erro: #ff7d72;
+  --color-erro-soft: #3a1f22;
+  --color-ai: #e6b65c;
+  --color-ai-soft: #332a14;
+
+  --color-on-accent: #10141d;
 }
 
 html {
