@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Atkinson Hyperlegible", ui-sans-serif, system-ui, sans-serif;
+
+  /* Papel e tinta de uma folha de prova */
+  --color-paper: #eef1f5;
+  --color-sheet: #ffffff;
+  --color-ink: #18202d;
+  --color-graphite: #586273;
+  --color-rule: #d5dbe4;
+
+  /* Caneta azul: seleção e ações principais */
+  --color-pen: #2b3fc4;
+  --color-pen-dark: #1f2f9a;
+  --color-pen-soft: #e7eafb;
+
+  /* Correção */
+  --color-acerto: #16704a;
+  --color-acerto-soft: #e2f2e9;
+  --color-erro: #b02a1f;
+  --color-erro-soft: #fbe8e6;
+  --color-ai: #835400;
+  --color-ai-soft: #fbf1dc;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-pen);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* Conteúdo em markdown (enunciados e alternativas) */
+.md > * + * {
+  margin-top: 0.75em;
+}
+.md strong {
+  font-weight: 700;
+}
+.md em {
+  font-style: italic;
+}
+.md ul {
+  list-style: disc;
+  padding-left: 1.4em;
+}
+.md ol {
+  list-style: decimal;
+  padding-left: 1.4em;
+}
+.md li + li {
+  margin-top: 0.25em;
+}
+.md code {
+  font-size: 0.92em;
+  background: var(--color-paper);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}
+.md pre {
+  background: var(--color-paper);
+  padding: 0.75em 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+.md pre code {
+  background: none;
+  padding: 0;
+}
+.md blockquote {
+  border-left: 3px solid var(--color-rule);
+  padding-left: 1em;
+  color: var(--color-graphite);
+}
+.md table {
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+  display: block;
+  overflow-x: auto;
+}
+.md th,
+.md td {
+  border: 1px solid var(--color-rule);
+  padding: 0.35em 0.8em;
+  text-align: left;
+}
+.md th {
+  background: var(--color-paper);
+  font-weight: 700;
+}
+.md img {
+  max-width: 100%;
+  height: auto;
+}
+.md .math-block {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25em 0;
+}
+.md .katex {
+  font-size: 1.08em;
+}

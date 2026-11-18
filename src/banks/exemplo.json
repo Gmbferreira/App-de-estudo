@@ -1,0 +1,118 @@
+{
+  "id": "exemplo",
+  "title": "Exemplo: cálculo e estatística",
+  "description": "Banco de demonstração. Pode apagar quando tiver os seus.",
+  "source": "Questões criadas para testar o app",
+  "version": 1,
+  "tags": ["exemplo"],
+  "questions": [
+    {
+      "id": "q001",
+      "statement": "Qual é a derivada de $f(x) = x^3 \\ln x$?",
+      "options": [
+        { "id": "a", "text": "$3x^2 \\ln x + x^2$" },
+        { "id": "b", "text": "$3x^2 \\ln x$" },
+        { "id": "c", "text": "$3x^2 + \\frac{1}{x}$" },
+        { "id": "d", "text": "$x^2(3 \\ln x - 1)$" },
+        { "id": "e", "text": "$x^3 \\ln x + 3x^2$" }
+      ],
+      "answer": "a",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Cálculo I, lista 3",
+      "tags": ["derivadas"]
+    },
+    {
+      "id": "q002",
+      "statement": "Calcule o limite:\n\n$$\\lim_{x \\to 0} \\frac{\\sin(3x)}{x}$$",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "1" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "$\\frac{1}{3}$" },
+        { "id": "e", "text": "O limite não existe" }
+      ],
+      "answer": "c",
+      "answerSource": "ai",
+      "optionsSource": "generated",
+      "tags": ["limites"]
+    },
+    {
+      "id": "q003",
+      "statement": "Considere as afirmações sobre a mediana de um conjunto de dados:\n\nI. A mediana é menos sensível a valores extremos do que a média.\nII. Em um conjunto com número par de elementos, a mediana é a média dos dois valores centrais.\nIII. A mediana é sempre igual à moda.\n\nEstá correto o que se afirma em:",
+      "options": [
+        { "id": "a", "text": "Apenas I" },
+        { "id": "b", "text": "Apenas I e II" },
+        { "id": "c", "text": "Apenas II e III" },
+        { "id": "d", "text": "Apenas III" },
+        { "id": "e", "text": "I, II e III" }
+      ],
+      "answer": "b",
+      "answerSource": "official",
+      "optionsSource": "original",
+      "source": "Estatística, P1",
+      "tags": ["medidas de posição"]
+    },
+    {
+      "id": "q004",
+      "statement": "Um produto custava R$ 80,00 e passou a custar R$ 100,00. Qual foi o aumento percentual do preço?",
+      "options": [
+        { "id": "a", "text": "20%" },
+        { "id": "b", "text": "25%" },
+        { "id": "c", "text": "80%" },
+        { "id": "d", "text": "125%" },
+        { "id": "e", "text": "0,25%" }
+      ],
+      "answer": "b",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "tags": ["porcentagem"]
+    },
+    {
+      "id": "q005",
+      "statement": "A tabela mostra as notas de um aluno e o peso de cada prova:\n\n| Prova | Nota | Peso |\n|---|---|---|\n| P1 | 6,0 | 1 |\n| P2 | 8,0 | 2 |\n| P3 | 7,0 | 1 |\n\nQual é a média ponderada do aluno?",
+      "options": [
+        { "id": "a", "text": "7,00" },
+        { "id": "b", "text": "7,25" },
+        { "id": "c", "text": "7,50" },
+        { "id": "d", "text": "7,33" },
+        { "id": "e", "text": "7,75" }
+      ],
+      "answer": "b",
+      "answerSource": "ai",
+      "optionsSource": "generated",
+      "tags": ["média"]
+    },
+    {
+      "id": "q006",
+      "statement": "Calcule a integral definida:\n\n$$\\int_0^2 3x^2 \\, dx$$",
+      "options": [
+        { "id": "a", "text": "6" },
+        { "id": "b", "text": "8" },
+        { "id": "c", "text": "12" },
+        { "id": "d", "text": "4" },
+        { "id": "e", "text": "24" }
+      ],
+      "answer": "b",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "tags": ["integrais"]
+    },
+    {
+      "id": "q007",
+      "statement": "Em um teste de hipóteses, o **erro do tipo I** consiste em:",
+      "options": [
+        { "id": "a", "text": "Rejeitar a hipótese nula quando ela é verdadeira" },
+        { "id": "b", "text": "Não rejeitar a hipótese nula quando ela é falsa" },
+        { "id": "c", "text": "Rejeitar a hipótese alternativa quando ela é verdadeira" },
+        { "id": "d", "text": "Aceitar a hipótese nula quando ela é verdadeira" },
+        { "id": "e", "text": "Usar um nível de significância maior que o adequado" }
+      ],
+      "answer": "a",
+      "answerSource": "official",
+      "optionsSource": "original",
+      "source": "Estatística, P2",
+      "tags": ["testes de hipóteses"]
+    }
+  ]
+}
