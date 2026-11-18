@@ -1,0 +1,904 @@
+{
+  "id": "aula-8-experimentacao",
+  "title": "Medição e experimentação: Prova 3",
+  "description": "Tipos de pesquisa, etapas, planejamento, validade, operação e análise (Wohlin et al., 2012)",
+  "source": "Lista de exercícios da Aula 8",
+  "version": 1,
+  "tags": [
+    "experimentação",
+    "engenharia de software experimental"
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "statement": "Quanto à natureza, qual é a diferença entre pesquisa básica e pesquisa aplicada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A básica usa métodos qualitativos e exploratórios; a aplicada usa métodos quantitativos e testes estatísticos"
+        },
+        {
+          "id": "b",
+          "text": "A básica descreve as características de um fenômeno; a aplicada explica as causas desse fenômeno"
+        },
+        {
+          "id": "c",
+          "text": "A básica amplia o conhecimento teórico; a aplicada resolve problemas concretos em um contexto específico"
+        },
+        {
+          "id": "d",
+          "text": "A básica coleta dados em um único momento; a aplicada acompanha o fenômeno ao longo do tempo"
+        },
+        {
+          "id": "e",
+          "text": "A básica é feita em laboratório, com controle das variáveis; a aplicada é feita em campo, sem controle"
+        }
+      ],
+      "answer": "c",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 1",
+      "tags": [
+        "tipos de pesquisa"
+      ]
+    },
+    {
+      "id": "q002",
+      "statement": "Quanto aos objetivos, como se classifica uma pesquisa que busca relações de causa e efeito (\"por que acontece?\")?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Explicativa"
+        },
+        {
+          "id": "b",
+          "text": "Descritiva"
+        },
+        {
+          "id": "c",
+          "text": "Exploratória"
+        },
+        {
+          "id": "d",
+          "text": "Aplicada"
+        },
+        {
+          "id": "e",
+          "text": "Experimental"
+        }
+      ],
+      "answer": "a",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 2",
+      "tags": [
+        "tipos de pesquisa"
+      ]
+    },
+    {
+      "id": "q003",
+      "statement": "Quanto aos procedimentos, qual pesquisa manipula variáveis e compara grupos, e qual investiga em profundidade um ou poucos casos, em contexto real e com múltiplas fontes de evidência, respectivamente?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estudo de caso; pesquisa experimental"
+        },
+        {
+          "id": "b",
+          "text": "Survey; estudo de caso"
+        },
+        {
+          "id": "c",
+          "text": "Pesquisa experimental; pesquisa bibliográfica"
+        },
+        {
+          "id": "d",
+          "text": "Pesquisa experimental; estudo de caso"
+        },
+        {
+          "id": "e",
+          "text": "Pesquisa explicativa; pesquisa exploratória"
+        }
+      ],
+      "answer": "d",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 3",
+      "tags": [
+        "tipos de pesquisa"
+      ]
+    },
+    {
+      "id": "q004",
+      "statement": "Qual é a diferença entre um estudo transversal e um estudo longitudinal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O transversal coleta dados em vários pontos no tempo; o longitudinal coleta dados em um único momento, como uma fotografia"
+        },
+        {
+          "id": "b",
+          "text": "O transversal coleta dados em um único momento; o longitudinal coleta em vários pontos no tempo, acompanhando a evolução"
+        },
+        {
+          "id": "c",
+          "text": "O transversal compara vários grupos ao mesmo tempo; o longitudinal estuda um único grupo em profundidade e em contexto real"
+        },
+        {
+          "id": "d",
+          "text": "O transversal usa questionários aplicados a muitas pessoas; o longitudinal usa observação direta e entrevistas"
+        },
+        {
+          "id": "e",
+          "text": "O transversal manipula variáveis e compara tratamentos; o longitudinal apenas observa, sem intervir no fenômeno"
+        }
+      ],
+      "answer": "b",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 4",
+      "tags": [
+        "tipos de pesquisa"
+      ]
+    },
+    {
+      "id": "q005",
+      "statement": "Quais são, em ordem, as cinco etapas do processo de experimentação?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Planejamento, escopo, operação, análise e interpretação, apresentação e empacotamento"
+        },
+        {
+          "id": "b",
+          "text": "Escopo, planejamento, análise e interpretação, operação, apresentação e empacotamento"
+        },
+        {
+          "id": "c",
+          "text": "Escopo, operação, planejamento, análise e interpretação, apresentação e empacotamento"
+        },
+        {
+          "id": "d",
+          "text": "Escopo, planejamento, operação, validação dos dados, apresentação e empacotamento"
+        },
+        {
+          "id": "e",
+          "text": "Escopo, planejamento, operação, análise e interpretação, apresentação e empacotamento"
+        }
+      ],
+      "answer": "e",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 5",
+      "tags": [
+        "etapas da experimentação"
+      ]
+    },
+    {
+      "id": "q006",
+      "statement": "No diagrama do processo de experimentação, o que existe antes da etapa de escopo e qual artefato é gerado ao final do processo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ideia do experimento; o relatório do experimento"
+        },
+        {
+          "id": "b",
+          "text": "A definição do objetivo; o relatório do experimento"
+        },
+        {
+          "id": "c",
+          "text": "A ideia do experimento; as conclusões"
+        },
+        {
+          "id": "d",
+          "text": "A formulação de hipóteses; o design do experimento"
+        },
+        {
+          "id": "e",
+          "text": "A revisão da literatura; os dados do experimento"
+        }
+      ],
+      "answer": "a",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 6",
+      "tags": [
+        "etapas da experimentação"
+      ]
+    },
+    {
+      "id": "q007",
+      "statement": "Qual artefato a etapa de escopo produz e qual etapa o recebe como entrada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O design do experimento; a operação"
+        },
+        {
+          "id": "b",
+          "text": "A definição do objetivo; a operação"
+        },
+        {
+          "id": "c",
+          "text": "A definição do objetivo; o planejamento"
+        },
+        {
+          "id": "d",
+          "text": "As hipóteses; o planejamento"
+        },
+        {
+          "id": "e",
+          "text": "A ideia do experimento; o planejamento"
+        }
+      ],
+      "answer": "c",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 7",
+      "tags": [
+        "etapas da experimentação"
+      ]
+    },
+    {
+      "id": "q008",
+      "statement": "Qual artefato a análise e interpretação produz e qual etapa vem logo em seguida?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os dados do experimento; apresentação e empacotamento"
+        },
+        {
+          "id": "b",
+          "text": "As conclusões; validação dos dados"
+        },
+        {
+          "id": "c",
+          "text": "O relatório do experimento; nenhuma, pois é a última etapa"
+        },
+        {
+          "id": "d",
+          "text": "O design do experimento; operação"
+        },
+        {
+          "id": "e",
+          "text": "As conclusões; apresentação e empacotamento"
+        }
+      ],
+      "answer": "e",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 8",
+      "tags": [
+        "etapas da experimentação"
+      ]
+    },
+    {
+      "id": "q009",
+      "statement": "Quais são, em ordem, as sete subetapas do planejamento do experimento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seleção do contexto, seleção de variáveis, formulação de hipóteses, seleção de sujeitos, escolha do tipo de design, instrumentação, avaliação da validade"
+        },
+        {
+          "id": "b",
+          "text": "Seleção do contexto, formulação de hipóteses, seleção de variáveis, seleção de sujeitos, escolha do tipo de design, instrumentação, avaliação da validade"
+        },
+        {
+          "id": "c",
+          "text": "Formulação de hipóteses, seleção do contexto, seleção de variáveis, seleção de sujeitos, escolha do tipo de design, instrumentação, avaliação da validade"
+        },
+        {
+          "id": "d",
+          "text": "Seleção do contexto, formulação de hipóteses, seleção de variáveis, escolha do tipo de design, seleção de sujeitos, instrumentação, avaliação da validade"
+        },
+        {
+          "id": "e",
+          "text": "Seleção do contexto, formulação de hipóteses, seleção de variáveis, seleção de sujeitos, instrumentação, escolha do tipo de design, avaliação da validade"
+        }
+      ],
+      "answer": "b",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 9",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q010",
+      "statement": "No planejamento, qual subetapa vem imediatamente antes e qual vem imediatamente depois da seleção de variáveis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antes: seleção do contexto. Depois: seleção de sujeitos."
+        },
+        {
+          "id": "b",
+          "text": "Antes: formulação de hipóteses. Depois: escolha do tipo de design."
+        },
+        {
+          "id": "c",
+          "text": "Antes: seleção de sujeitos. Depois: formulação de hipóteses."
+        },
+        {
+          "id": "d",
+          "text": "Antes: formulação de hipóteses. Depois: seleção de sujeitos."
+        },
+        {
+          "id": "e",
+          "text": "Antes: seleção do contexto. Depois: formulação de hipóteses."
+        }
+      ],
+      "answer": "d",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 10",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q011",
+      "statement": "Quais são a primeira e a última subetapa do planejamento, e que artefato o planejamento entrega para a operação?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seleção do contexto e avaliação da validade; o design do experimento"
+        },
+        {
+          "id": "b",
+          "text": "Seleção do contexto e instrumentação; o design do experimento"
+        },
+        {
+          "id": "c",
+          "text": "Formulação de hipóteses e avaliação da validade; o design do experimento"
+        },
+        {
+          "id": "d",
+          "text": "Seleção do contexto e avaliação da validade; os dados do experimento"
+        },
+        {
+          "id": "e",
+          "text": "Formulação de hipóteses e instrumentação; a definição do objetivo"
+        }
+      ],
+      "answer": "a",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 11",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q012",
+      "statement": "Qual é a diferença entre a hipótese nula (H0) e a hipótese alternativa (H1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H0 afirma que há diferença real entre os tratamentos; H1 afirma que as diferenças observadas se devem ao acaso"
+        },
+        {
+          "id": "b",
+          "text": "H0 é a hipótese que o pesquisador quer confirmar com os dados; H1 é a hipótese que ele quer rejeitar"
+        },
+        {
+          "id": "c",
+          "text": "H0 afirma que não há diferença real (o observado se deve ao acaso); H1 é aceita quando H0 é rejeitada"
+        },
+        {
+          "id": "d",
+          "text": "H0 é testada antes da coleta, com dados de um piloto; H1 é testada depois, com os dados do experimento"
+        },
+        {
+          "id": "e",
+          "text": "H0 é usada em testes paramétricos; H1 é usada em testes não paramétricos, quando não há normalidade"
+        }
+      ],
+      "answer": "c",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 12",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q013",
+      "statement": "Como se definem fator e tratamento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fator é a variável dependente observada no experimento; tratamento é a forma como ela é medida"
+        },
+        {
+          "id": "b",
+          "text": "Fator é uma variável independente manipulada pelo experimentador; tratamento é cada valor de um fator"
+        },
+        {
+          "id": "c",
+          "text": "Fator é cada valor de uma variável independente; tratamento é a variável manipulada pelo experimentador"
+        },
+        {
+          "id": "d",
+          "text": "Fator é uma variável mantida fixa durante o experimento; tratamento é a variável manipulada"
+        },
+        {
+          "id": "e",
+          "text": "Fator é o grupo de participantes do experimento; tratamento é a tarefa que cada grupo executa"
+        }
+      ],
+      "answer": "b",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 13",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q014",
+      "statement": "Como se definem variável dependente, variável independente e variável de controle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dependente: manipulada pelo experimentador; independente: o resultado observado; de controle: mantida fixa durante o experimento"
+        },
+        {
+          "id": "b",
+          "text": "Dependente: o resultado observado; independente: pode afetar o resultado e é controlada pelo experimentador; de controle: usada só no grupo de controle"
+        },
+        {
+          "id": "c",
+          "text": "Dependente: o resultado observado; independente: não pode ser controlada pelo experimentador; de controle: variada entre os grupos"
+        },
+        {
+          "id": "d",
+          "text": "Dependente: característica do participante; independente: característica da tarefa; de controle: medida antes do experimento"
+        },
+        {
+          "id": "e",
+          "text": "Dependente: o resultado observado; independente: pode afetar o resultado e é controlada pelo experimentador; de controle: independente mantida fixa"
+        }
+      ],
+      "answer": "e",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 14",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q015",
+      "statement": "Por que se recomenda, preferencialmente, uma só variável dependente? E como as variáveis independentes podem ser organizadas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para reduzir o número de participantes necessários; as independentes devem formar um único fator com dois tratamentos"
+        },
+        {
+          "id": "b",
+          "text": "Porque os testes estatísticos só aceitam uma variável; as independentes podem formar vários fatores, cada um com um único tratamento"
+        },
+        {
+          "id": "c",
+          "text": "Para que a relação de causa e efeito fique clara; as independentes devem ser todas mantidas fixas como variáveis de controle"
+        },
+        {
+          "id": "d",
+          "text": "Para que a relação de causa e efeito fique clara; as independentes podem formar vários fatores, cada um com dois ou mais tratamentos"
+        },
+        {
+          "id": "e",
+          "text": "Para evitar o efeito de aprendizado; as independentes podem formar vários fatores, cada um com dois ou mais tratamentos"
+        }
+      ],
+      "answer": "d",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 15",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q016",
+      "statement": "Quais são os dois usos da randomização e que tipo de validade cada um favorece?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seleção aleatória dos participantes, que favorece a validade externa; atribuição aleatória aos tratamentos, que protege a validade interna"
+        },
+        {
+          "id": "b",
+          "text": "Seleção aleatória dos participantes, que favorece a validade interna; atribuição aleatória aos tratamentos, que protege a validade externa"
+        },
+        {
+          "id": "c",
+          "text": "Seleção aleatória dos participantes, que favorece a validade de construto; ordem aleatória das tarefas, que protege a validade de conclusão"
+        },
+        {
+          "id": "d",
+          "text": "Atribuição aleatória aos tratamentos, que favorece a validade externa; sorteio dos objetos, que protege a validade de construto"
+        },
+        {
+          "id": "e",
+          "text": "Sorteio da ordem dos tratamentos, que favorece a validade de conclusão; atribuição aleatória aos tratamentos, que protege a validade externa"
+        }
+      ],
+      "answer": "a",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 16",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q017",
+      "statement": "O que são bloqueio (blocking) e balanceamento (balancing) no design do experimento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bloqueio: impedir que um mesmo participante receba mais de um tratamento; balanceamento: sortear a ordem dos tratamentos para cada participante"
+        },
+        {
+          "id": "b",
+          "text": "Bloqueio: excluir do experimento os participantes com experiência prévia no tema; balanceamento: mesmo número de participantes em cada tratamento e bloco"
+        },
+        {
+          "id": "c",
+          "text": "Bloqueio: agrupar participantes por um fator fora do foco e sortear os tratamentos em cada bloco; balanceamento: mesmo número de participantes por tratamento e bloco"
+        },
+        {
+          "id": "d",
+          "text": "Bloqueio: agrupar os participantes pelo tratamento que receberam; balanceamento: ajustar estatisticamente os resultados de grupos de tamanhos diferentes"
+        },
+        {
+          "id": "e",
+          "text": "Bloqueio: agrupar participantes por um fator fora do foco e sortear os tratamentos em cada bloco; balanceamento: manter fixas todas as variáveis fora do foco"
+        }
+      ],
+      "answer": "c",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 17",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q018",
+      "statement": "No design de medidas repetidas (crossover), qual é a principal vantagem e qual efeito precisa ser controlado?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dispensa a randomização, pois todos aplicam os dois tratamentos; é preciso controlar o efeito de maturação, aumentando a amostra"
+        },
+        {
+          "id": "b",
+          "text": "Aumenta a validade externa, pois usa grupos distintos; é preciso controlar o efeito de seleção, sorteando os participantes"
+        },
+        {
+          "id": "c",
+          "text": "Reduz o número de participantes, pois cada um aplica os dois tratamentos; é preciso controlar o efeito de seleção, usando grupos independentes"
+        },
+        {
+          "id": "d",
+          "text": "Permite testar mais de dois fatores ao mesmo tempo; é preciso controlar o efeito de expectativa, ocultando a hipótese dos participantes"
+        },
+        {
+          "id": "e",
+          "text": "Reduz o número de participantes, pois cada um aplica os dois tratamentos; é preciso controlar o efeito de aprendizado, sorteando a ordem"
+        }
+      ],
+      "answer": "e",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 18",
+      "tags": [
+        "planejamento"
+      ]
+    },
+    {
+      "id": "q019",
+      "statement": "Quais são os quatro tipos de validade avaliados em um experimento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interna, externa, estatística e ecológica"
+        },
+        {
+          "id": "b",
+          "text": "Conclusão, interna, de construto e externa"
+        },
+        {
+          "id": "c",
+          "text": "Conclusão, interna, de conteúdo e externa"
+        },
+        {
+          "id": "d",
+          "text": "Interna, externa, de construto e de critério"
+        },
+        {
+          "id": "e",
+          "text": "Conclusão, interna, de construto e de face"
+        }
+      ],
+      "answer": "b",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 19",
+      "tags": [
+        "validade"
+      ]
+    },
+    {
+      "id": "q020",
+      "statement": "Classifique cada ameaça pelo tipo de validade:\n\n(a) baixo poder estatístico;\n(b) maturação e histórico;\n(c) os participantes formularem suposições sobre a hipótese do estudo e agirem de acordo com elas (hypothesis guessing);\n(d) interação entre seleção e tratamento, quando os participantes não representam a população à qual se quer generalizar.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) interna; (b) conclusão; (c) construto; (d) externa"
+        },
+        {
+          "id": "b",
+          "text": "(a) conclusão; (b) externa; (c) interna; (d) construto"
+        },
+        {
+          "id": "c",
+          "text": "(a) conclusão; (b) interna; (c) externa; (d) construto"
+        },
+        {
+          "id": "d",
+          "text": "(a) conclusão; (b) interna; (c) construto; (d) externa"
+        },
+        {
+          "id": "e",
+          "text": "(a) construto; (b) interna; (c) conclusão; (d) externa"
+        }
+      ],
+      "answer": "d",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 20",
+      "tags": [
+        "validade"
+      ]
+    },
+    {
+      "id": "q021",
+      "statement": "Quais são, em ordem, as subetapas da operação do experimento, e qual é a entrada e a saída dessa etapa?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Preparação, execução e validação dos dados; entrada: design do experimento; saída: dados do experimento"
+        },
+        {
+          "id": "b",
+          "text": "Preparação, validação dos dados e execução; entrada: design do experimento; saída: dados do experimento"
+        },
+        {
+          "id": "c",
+          "text": "Preparação, execução e validação dos dados; entrada: definição do objetivo; saída: conclusões"
+        },
+        {
+          "id": "d",
+          "text": "Instrumentação, execução e análise; entrada: design do experimento; saída: dados do experimento"
+        },
+        {
+          "id": "e",
+          "text": "Preparação, execução e validação dos dados; entrada: dados do experimento; saída: relatório do experimento"
+        }
+      ],
+      "answer": "a",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 21",
+      "tags": [
+        "operação"
+      ]
+    },
+    {
+      "id": "q022",
+      "statement": "Quais são os dois aspectos tratados na preparação, primeira subetapa da operação?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Formular as hipóteses do estudo e selecionar as variáveis dependentes, independentes e de controle de cada tratamento"
+        },
+        {
+          "id": "b",
+          "text": "Comprometer os participantes (consentimento, recompensas) e preparar a instrumentação (objetos, guidelines, medição)"
+        },
+        {
+          "id": "c",
+          "text": "Comprometer os participantes (consentimento, recompensas) e validar os dados coletados quanto à consistência e completude"
+        },
+        {
+          "id": "d",
+          "text": "Escolher o tipo de design do experimento e sortear os participantes entre os tratamentos e os blocos"
+        },
+        {
+          "id": "e",
+          "text": "Treinar os participantes nos tratamentos e executar um estudo piloto para estimar o tamanho do efeito"
+        }
+      ],
+      "answer": "b",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 22",
+      "tags": [
+        "operação"
+      ]
+    },
+    {
+      "id": "q023",
+      "statement": "Quais são, em ordem, as subetapas da análise e interpretação, e qual delas precede o teste de hipótese?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redução do conjunto de dados, estatística descritiva e teste de hipótese; a estatística descritiva precede o teste"
+        },
+        {
+          "id": "b",
+          "text": "Estatística descritiva, teste de hipótese e redução do conjunto de dados; a estatística descritiva precede o teste"
+        },
+        {
+          "id": "c",
+          "text": "Validação dos dados, estatística descritiva e teste de hipótese; a estatística descritiva precede o teste"
+        },
+        {
+          "id": "d",
+          "text": "Estatística descritiva, redução do conjunto de dados e teste de hipótese; a redução precede o teste"
+        },
+        {
+          "id": "e",
+          "text": "Estatística descritiva, redução do conjunto de dados e teste de hipótese; a validação dos dados precede o teste"
+        }
+      ],
+      "answer": "d",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 23",
+      "tags": [
+        "análise e interpretação"
+      ]
+    },
+    {
+      "id": "q024",
+      "statement": "Por que a estatística descritiva é aplicada antes dos testes de hipótese?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para definir o nível de significância α que será usado no teste de hipótese"
+        },
+        {
+          "id": "b",
+          "text": "Para substituir o teste de hipótese quando a amostra é pequena demais"
+        },
+        {
+          "id": "c",
+          "text": "Para confirmar a hipótese alternativa antes de aplicar o teste formal"
+        },
+        {
+          "id": "d",
+          "text": "Para calcular o p-valor que será comparado com o nível de significância"
+        },
+        {
+          "id": "e",
+          "text": "Para entender a distribuição dos dados e identificar pontos anormais (outliers)"
+        }
+      ],
+      "answer": "e",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 24",
+      "tags": [
+        "análise e interpretação"
+      ]
+    },
+    {
+      "id": "q025",
+      "statement": "Que suposições um teste paramétrico exige e que um não paramétrico não exige?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amostras pareadas e medidas em escala ordinal ou nominal"
+        },
+        {
+          "id": "b",
+          "text": "Uma distribuição específica (em geral, normal) e medidas em escala nominal"
+        },
+        {
+          "id": "c",
+          "text": "Distribuição específica (em geral, normal) e escala pelo menos de intervalo"
+        },
+        {
+          "id": "d",
+          "text": "Amostras de mesmo tamanho em todos os grupos e ausência de outliers"
+        },
+        {
+          "id": "e",
+          "text": "Pelo menos três tratamentos e medidas em escala ordinal"
+        }
+      ],
+      "answer": "c",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 25",
+      "tags": [
+        "análise e interpretação"
+      ]
+    },
+    {
+      "id": "q026",
+      "statement": "Na escolha entre um teste paramétrico e um não paramétrico, quais são os dois fatores a considerar, e quando o não paramétrico é a opção indicada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aplicabilidade e poder do teste; quando as suposições do paramétrico não se sustentam (ex.: sem normalidade)"
+        },
+        {
+          "id": "b",
+          "text": "Tamanho da amostra e nível de significância; quando a amostra tem mais de 30 observações por grupo"
+        },
+        {
+          "id": "c",
+          "text": "Aplicabilidade e poder do teste; quando os dados são normais e estão em escala de intervalo"
+        },
+        {
+          "id": "d",
+          "text": "Número de fatores e de tratamentos; quando o experimento tem mais de dois tratamentos por fator"
+        },
+        {
+          "id": "e",
+          "text": "Custo e tempo de execução do teste; quando se precisa de mais poder do que o paramétrico oferece"
+        }
+      ],
+      "answer": "a",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 26",
+      "tags": [
+        "análise e interpretação"
+      ]
+    },
+    {
+      "id": "q027",
+      "statement": "Qual é a diferença entre amostras pareadas e não pareadas (independentes), e que tipo de design gera cada uma?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pareadas: grupos distintos, cada um com um tratamento (controle × experimental); não pareadas: o mesmo participante é medido nos dois tratamentos (crossover)"
+        },
+        {
+          "id": "b",
+          "text": "Pareadas: participantes sorteados em duplas que executam a tarefa juntos; não pareadas: participantes que executam sozinhos, em qualquer design"
+        },
+        {
+          "id": "c",
+          "text": "Pareadas: amostras de mesmo tamanho (design balanceado); não pareadas: amostras de tamanhos diferentes (design desbalanceado)"
+        },
+        {
+          "id": "d",
+          "text": "Pareadas: o mesmo participante é medido nos dois tratamentos (crossover); não pareadas: grupos distintos, cada um com um só tratamento"
+        },
+        {
+          "id": "e",
+          "text": "Pareadas: dados coletados no mesmo momento (estudo transversal); não pareadas: dados coletados em momentos diferentes (estudo longitudinal)"
+        }
+      ],
+      "answer": "d",
+      "answerSource": "official",
+      "optionsSource": "generated",
+      "source": "Questão 27",
+      "tags": [
+        "análise e interpretação"
+      ]
+    }
+  ]
+}
